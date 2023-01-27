@@ -87,7 +87,7 @@ def L(v: BaseFunctionId) -> float:
 
 def L_shift(i: BaseFunctionId) -> float:
     """Returns value of L(v) - B(u_shift, v)"""
-    return L(i) - 2 * B(0, i)
+    return L(i) - u_in_zero * B(0, i)
 
 def solve_equation() -> np.ndarray:
     B_matrix = np.fromfunction(np.vectorize(lambda x, y: B(  
@@ -98,7 +98,7 @@ def solve_equation() -> np.ndarray:
     return coefficient_vector
 
 def get_solution_value_at_x(x: float, coefficients: list) -> float:
-    return sum(coefficients[i] * e_k(i, x) for i in range(number_of_elements))
+    return sum(coefficients[i] * e_k(i + 1, x) for i in range(number_of_elements)) + u_in_zero * e_k(0, x)
 
 
 def draw_solution(coefficients: list):
