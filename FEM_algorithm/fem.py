@@ -106,6 +106,9 @@ def draw_solution(coefficients: list):
     y = [get_solution_value_at_x(i, coefficients)
          for i in np.arange(range_x[0], range_x[1], half_period_len)]
     plt.plot(x, y)
+    plt.title(f'Acoustic vibrations of the material layer solution for n = {number_of_elements}')
+    plt.xlabel("x")
+    plt.ylabel("y")
     plt.show()
 
 
