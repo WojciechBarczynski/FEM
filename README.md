@@ -6,7 +6,7 @@ Celem projektu jest znalezienie rozwiązania nastepującego rówanania:
 
 ## Instalacja
 
-- Do uruchomić program niezbędne jest posiadanie zainstalowanego Pythona w wersji co najniej 3.10. Wersję python można sprawdzić wpisując w termianal komendę: 
+- Do uruchomienia programu niezbędne jest posiadanie zainstalowanego Pythona w wersji co najniej 3.10. Wersję python można sprawdzić wpisując w termianal komendę: 
 `python3 --version`. W przypdaku posiadania wersji wcześniejszczej niż 3.10 niezbędne będzie jej zaktualizowanie komendą:
     - `sudo apt-get install python3` (linux)
     - `brew upgrade python3` / `brew install python3` (mac) 
